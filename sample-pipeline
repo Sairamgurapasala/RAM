@@ -1,11 +1,9 @@
 pipeline {
- agent {
-     docker { image 'node:16-alpine' }
- }
- stages {
-        stage('test') {
-            step {
-                sh 'sh --version'
+    agent any
+    stages {
+        stage('Welcome Step') {
+            steps { 
+                echo 'Welcome to LambdaTest'
             }
         }
     }
